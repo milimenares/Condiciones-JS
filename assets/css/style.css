@@ -1,0 +1,192 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: monospace;
+}
+
+img {
+    width: 100%;
+}
+
+.section-1 {
+    display: flex;
+    justify-content: center;
+    background-color: #c8f5ff;
+    text-align: center;
+    padding: 30px;
+}
+
+.card-1 {
+    width: 100%;
+}
+
+.frase-planet {
+    display: inline-block;
+    animation: moverTexto 2s ease infinite;
+}
+
+@keyframes moverTexto {
+    0% {
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+.section-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    text-align: center;
+}
+
+.bg-stickers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 25px;
+}
+
+h1 {
+    margin-bottom: 40px;
+}
+
+h1 span {
+    color: #ff4545;
+}
+
+.card-2 {
+    width: 100%;
+}
+
+.img-sticker {
+    border-radius: 100%;
+    box-shadow: 0px 0px 10px 1px #d0d0d0;
+    margin-bottom: 25px;
+}
+
+input {
+    padding: 4px;
+    border: 2px solid #000;
+    border-radius: 20px;
+    text-align: center;
+}
+
+button.comprar {
+    background-color: #5cd4ef;
+    color: #000;
+    padding: 10px 20px;
+    border: 2px solid #000;
+    border-radius: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+button:hover.comprar {
+    background-color: #ff4545;
+    color: #fff;
+}
+
+#resultado {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.section-3 {
+    padding: 50px;
+    text-align: center;
+    background-color: #ca2a47;
+}
+
+.bg-pass {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+h2 {
+    margin-bottom: 40px;
+    text-align: center;
+    color: #fff;
+}
+
+select {
+    padding: 6px 15px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    border: 2px solid #e9e9ed;
+}
+
+#pass {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+button.validar {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: 2px solid #fff;
+    border-radius: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+button:hover.validar {
+    background-color: #ff4545;
+    color: #000;
+}
+
+
+@media (min-width: 576px) {
+    .card-1 {
+        width: 50%;
+    }
+    .card-2 {
+        width: 50%;
+    }
+}
+
+@media (min-width: 768px) {
+    .card-1 {
+        width: 33%;
+    }
+    .bg-stickers {
+        flex-direction: row;
+        justify-content: center;
+        gap: 50px;
+    }
+    .card-2 {
+        width: 29%;
+    }
+}
+
+@media (min-width: 992px) {
+    .card-1 {
+        width: 33%;
+    }
+    .card-2 {
+        width: 25%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .card-1 {
+        width: 25%;
+    }
+    .card-2 {
+        width: 22%;
+    }
+}
